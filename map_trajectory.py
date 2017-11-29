@@ -194,20 +194,20 @@ class GaussianDistribution(object):
 
 
 
-data = read("../hw6_data.txt")
+data = read("hw6_data.txt")
 x,y,theta = get_position(data)
 
-L,R = buildmap(data,x,y,theta)
+#L,R = buildmap(data,x,y,theta)
 plt.plot(x,y,c='r')
 
-x = [data[0] for data in L]
-y = [data[1] for data in L]
-plt.scatter(x,y,c='b',marker='.')
+#x = [data[0] for data in L]
+#y = [data[1] for data in L]
+#plt.scatter(x,y,c='b',marker='.')
 
 
-x = [data[0] for data in R]
-y = [data[1] for data in R]
-plt.scatter(x,y,c='g',marker='.')
+#x = [data[0] for data in R]
+#y = [data[1] for data in R]
+#plt.scatter(x,y,c='g',marker='.')
 
 plt.legend()
 plt.show()
